@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { useContent } from "../hooks/useContent";
+import { PILLARS, PRODUCTS, INDUSTRIES, CONTACT_INFO, HERO } from "../constants";
 
 const IconMap: Record<string, any> = {
   Flame,
@@ -37,15 +37,10 @@ const SectionHeading = ({ children, subtitle }: { children: ReactNode, subtitle?
 );
 
 export default function Home() {
-  const { content, loading } = useContent();
-
-  if (loading || !content) return (
-    <div className="min-h-screen bg-white flex items-center justify-center">
-      <div className="w-10 h-10 border-4 border-orange-600 border-t-transparent rounded-full animate-spin" />
-    </div>
-  );
-
-  const { pillars, products, industries, contactInfo } = content;
+  const pillars = PILLARS;
+  const products = PRODUCTS;
+  const industries = INDUSTRIES;
+  const contactInfo = CONTACT_INFO;
 
   return (
     <>
@@ -59,13 +54,13 @@ export default function Home() {
             className="max-w-2xl"
           >
             <span className="text-orange-600 font-bold uppercase text-xs tracking-widest mb-4 block">
-              {content.hero.subtitle}
+              {HERO.subtitle}
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.1] tracking-tight">
-              {content.hero.title}
+              {HERO.title}
             </h2>
             <p className="text-slate-600 text-xl leading-relaxed mb-10 max-w-xl">
-              {content.hero.description}
+              {HERO.description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

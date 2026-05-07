@@ -6,6 +6,12 @@
 export const BRAND_NAME = "TOSAFENG";
 export const FULL_NAME = "Total Safety Engineering";
 
+export const HERO = {
+  subtitle: "ECOSYSTEM KEAMANAN GLOBAL",
+  title: "Ekosistem Keselamatan Terpadu: Melindungi Aset & Nyawa Selama 10+ Tahun",
+  description: "Mengubah spesifikasi teknis kelas dunia menjadi perlindungan maksimal untuk perkantoran, pabrik, dan institusi medis."
+};
+
 export const NAVIGATION = [
   { name: "Beranda", href: "home" },
   { name: "Tentang Kami", href: "about" },
@@ -41,9 +47,9 @@ export const PRODUCTS = [
     brand: "Hochiki",
     description: "Sistem deteksi kebakaran tercanggih dari Jepang.",
     items: [
-      { name: "Control Panel", spec: "Analogue Addressable & Conventional systems." },
-      { name: "Smoke/Heat Detector", spec: "High precision sensors with minimal false alarms." },
-      { name: "Manual Call Point", spec: "Robust design according to EN54 standards." },
+      { name: "Control Panel", spec: "Analogue Addressable & Conventional systems.", image: "" },
+      { name: "Smoke/Heat Detector", spec: "High precision sensors with minimal false alarms.", image: "" },
+      { name: "Manual Call Point", spec: "Robust design according to EN54 standards.", image: "" },
     ],
   },
   {
@@ -51,9 +57,9 @@ export const PRODUCTS = [
     brand: "TProtec",
     description: "Peralatan hidran premium dengan daya tahan maksimal.",
     items: [
-      { name: "Hydrant Box", spec: "Type A, B, & C with rust-resistant coating." },
-      { name: "Hydrant Pillar", spec: "One-way and Two-way pillars with high flow rate." },
-      { name: "Fire Hose & Nozzle", spec: "Synthetic rubber & Canvas with variable spray." },
+      { name: "Hydrant Box", spec: "Type A, B, & C with rust-resistant coating.", image: "" },
+      { name: "Hydrant Pillar", spec: "One-way and Two-way pillars with high flow rate.", image: "" },
+      { name: "Fire Hose & Nozzle", spec: "Synthetic rubber & Canvas with variable spray.", image: "" },
     ],
   },
   {
@@ -61,9 +67,9 @@ export const PRODUCTS = [
     brand: "Global Brands",
     description: "Pengawasan 24/7 dengan teknologi AI.",
     items: [
-      { name: "IP & Analog CCTV", spec: "Ultra HD resolution with low-light night vision." },
-      { name: "Access Door", spec: "Biometric, RFID, and Facial Recognition technology." },
-      { name: "Video Management", spec: "Centralized server for large-scale monitoring." },
+      { name: "IP & Analog CCTV", spec: "Ultra HD resolution with low-light night vision.", image: "" },
+      { name: "Access Door", spec: "Biometric, RFID, and Facial Recognition technology.", image: "" },
+      { name: "Video Management", spec: "Centralized server for large-scale monitoring.", image: "" },
     ],
   },
   {
@@ -71,9 +77,9 @@ export const PRODUCTS = [
     brand: "TOA / Yarward",
     description: "Solusi komunikasi dan jaringan data terintegrasi.",
     items: [
-      { name: "Fiber Optic Network", spec: "High-speed backbone for enterprise data." },
-      { name: "PABX IP Phone", spec: "Unified communication for seamless coordination." },
-      { name: "Nurse Call System", spec: "Specialized for hospitals (Yarward Brand)." },
+      { name: "Fiber Optic Network", spec: "High-speed backbone for enterprise data.", image: "" },
+      { name: "PABX IP Phone", spec: "Unified communication for seamless coordination.", image: "" },
+      { name: "Nurse Call System", spec: "Specialized for hospitals (Yarward Brand).", image: "" },
     ],
   },
 ];

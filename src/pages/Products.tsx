@@ -18,7 +18,7 @@ import {
   ScanFace
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { useContent } from "../hooks/useContent";
+import { PRODUCTS } from "../constants";
 
 interface ProductItem {
   name: string;
@@ -74,21 +74,9 @@ const itemImages: Record<string, string> = {
 };
 
 export default function Products() {
-  const { content, loading } = useContent();
   const [selectedItem, setSelectedItem] = useState<{item: ProductItem, category: string, brand: string} | null>(null);
   const [activeAccessMethod, setActiveAccessMethod] = useState<'biometric' | 'rfid' | 'facial'>('biometric');
   const [filterBrand, setFilterBrand] = useState<string>("All");
-
-  if (loading || !content) return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 border-4 border-orange-600 border-t-transparent rounded-full animate-spin" />
-        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Loading Catalog...</span>
-      </div>
-    </div>
-  );
-
-  const PRODUCTS = content.products;
 
   // Dynamically extract filter options
   const brands = ["All", ...new Set(PRODUCTS.map(p => p.brand))];

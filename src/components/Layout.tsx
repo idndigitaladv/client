@@ -158,7 +158,6 @@ export default function Layout({ children }: { children: ReactNode }) {
           
           <div className="pt-12 mt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-600 uppercase tracking-widest font-bold">
             <span>&copy; {new Date().getFullYear()} {FULL_NAME}</span>
-            <Link to="/admin" className="text-slate-700 hover:text-orange-900 transition-colors">Portal Admin</Link>
             <span className="opacity-50 font-mono tracking-tighter text-[9px]">Industrial Standard • Latin Business Dist • IDN</span>
           </div>
         </div>
